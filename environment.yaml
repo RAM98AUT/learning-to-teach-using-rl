@@ -1,0 +1,23 @@
+# Environment with Python 3.7 and Stable-Baseline2, which requires 3.5<=Python<=3.7 due to Tensorflow.
+# Reinforcement learning components will work in this environment.
+
+name: bkt21
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - numpy
+  - pandas
+  - matplotlib
+  - python=3.7
+  - jupyter
+  - cpuonly
+  - pytorch=1.8.1
+  - tqdm
+  - networkx
+  - autopep8
+  - pip
+  - pip:
+    - pyBKT
+    - stable-baselines
+    - gym
